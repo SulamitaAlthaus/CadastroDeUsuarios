@@ -14,7 +14,6 @@ app.use(cors())
 const TWO_HOURS = 1000 * 60 * 60 * 2 
 
 const {
-    PORT = 8081,
     NODE_ENV = 'development',
 
     SESS_NAME = 'sid',
@@ -116,7 +115,7 @@ app.post('/login', redirectHome, async (req, res) => {
             res.redirect('/login')
         })
 })
-
+const PORT = process.env.PORT || 8081
 app.listen(PORT, () => {
     console.log("Servidor Rodando!")
 })

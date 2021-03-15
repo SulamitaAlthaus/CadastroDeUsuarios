@@ -107,6 +107,13 @@ export const Text = styled.div`
         width: 150px;
         text-align: right;
     }
+
+    select{ 
+        width: 300px;
+        height: 25px;
+        text-align: right;
+        border-radius: 8px;
+    }
 `;
 export const Input = styled.input`
     padding-left: 10px;

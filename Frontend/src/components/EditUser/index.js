@@ -57,9 +57,9 @@ function EditUser({ onClose = () => { }, id, nome, email, telefone,
                         <label for="etnia">Etnia:</label>
                         <select name="etnia" id="etnia" onChange={e => etnia = (e.target.value)}>
                             <option> </option>
-                            <option value="indigena" select={e => etnia == (e.target.value)}>Indígena</option>
-                            <option value="branco">Branco</option>
-                            <option value="negro">Negro</option>
+                            <option value="indigena" selected={etnia==="indigena"}>Indígena</option>
+                            <option value="branco" selected={etnia==="branco"}>Branco</option>
+                            <option value="negro" selected={etnia==="negro"}>Negro</option>
                         </select>
                     </S.Text>
                     <S.Text><label for="idade">Idade:</label>

@@ -30,6 +30,7 @@ export const Form = styled.form`
   }
   input {
     flex: 1;
+    outline: none;
     height: 10vh;
     margin-bottom: 10px;
     padding: 2vh;
@@ -46,6 +47,7 @@ export const Form = styled.form`
     color: #FFFFFF;
     font-size: 16px;
     background:  #127786;
+    outline: none;
     height: 8vh;
     border: 0;
     border-radius: 10px;
