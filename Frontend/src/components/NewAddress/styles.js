@@ -7,7 +7,7 @@ export const Modal = styled.div`
     top: 0;
     left: 0;
     z-index: 10;
-    background-color: rgba(0,0,0,.8);
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,6 +112,7 @@ export const Input = styled.input`
     padding-left: 10px;
     width: 300px;
     font-size: 15px;
+    outline: none;
     margin-left: 10px;
     font-family: Arial, sans-serif;
     height: 20px;
@@ -143,6 +144,7 @@ export const Address = styled.button`
 export const Save = styled.button`
     width: 100px;
     height: 40px;
+    outline: none;
     float: right;
     border-radius: 20px;
     border: none;
@@ -158,6 +160,7 @@ export const Cancel = styled.button`
     width: 100px;
     height: 40px;
     float: right;
+    outline: none;
     margin-left: 20px;
     border: none;
     border-radius: 20px;

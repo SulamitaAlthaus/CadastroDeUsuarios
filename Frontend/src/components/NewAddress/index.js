@@ -3,7 +3,7 @@ import api from '../../services/api';
 import * as S from './styles';
 
 
-function NewUser({ onClose = () => {}, id, rua, numero, complemento,
+function NewUser({ onClose = () => {}, idUser, rua, numero, complemento,
 cep, cidade, estado}) {
 
 
@@ -13,10 +13,10 @@ cep, cidade, estado}) {
 
     async function save() {
         await api.post(`/admin/newaddress`, {
-            rua, numero, complemento, cep, cidade, estado
+            rua, numero, complemento, cep, cidade, estado, idUser
         }).then(() => {
                 window.location.reload()
-                alert("Usuário cadastrado")
+                alert("Endereço cadastrado")
 
             })
     }

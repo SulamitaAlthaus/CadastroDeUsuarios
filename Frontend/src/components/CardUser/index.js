@@ -41,7 +41,7 @@ function CardUser({ id, nome, email, telefone, roleId,
       {isModalVisible==="edit" ? <EditUser id={id} nome={nome} email={email} telefone={telefone} 
       etnia={etnia} idade={idade} peso={peso} roleId={roleId} 
             onClose={() => setIsModalVisible("")} /> : null}
-      {isModalVisible==="address" ? <ListAddress idUser={id} nome={nome}
+      {isModalVisible==="address" ? <ListAddress idUser={id}
             onClose={() => setIsModalVisible("")} /> : null}
     </S.Container>
   )

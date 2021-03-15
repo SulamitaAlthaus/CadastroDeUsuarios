@@ -6,6 +6,7 @@ import List from './list'
 
 function ListAddress({ onClose = () => { }, idUser }) {
     const [address, setAddress] = useState([]);
+    const [isModalVisible, setIsModalVisible] = useState()
 
     const handleOutsideClick = (e) => {
         if (e.target.id === "modal") onClose();
@@ -31,10 +32,12 @@ function ListAddress({ onClose = () => { }, idUser }) {
                     <h2>Endereços</h2>
                     <S.Button onClick={onClose} />
                 </S.Header>
-               {address.map(item => <List rua={item.rua} 
+               {address.map(item => <List id={item.id} rua={item.rua} 
                 numero={item.numero} complemento={item.complemento} 
-                cep={item.cep} cidade={item.cidade} estado={item.estado}/>)}
-            <S.NewAddress>Novo Endereço</S.NewAddress>
+                cep={item.cep} cidade={item.cidade} estado={item.estado} idUser={idUser}/>)}
+                <S.NewAddress onClick={() => setIsModalVisible("address")}>NOVO ENDEREÇO</S.NewAddress>
+                {isModalVisible==="address" ? <NewAddress idUser={idUser}
+            onClose={() => setIsModalVisible("")} /> : null}
             </S.Content>
         </S.Container>
         </S.Modal>

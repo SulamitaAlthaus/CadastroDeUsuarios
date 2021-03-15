@@ -6,16 +6,6 @@ import { isAuthenticated } from "../services/auth";
 import Login from "../views/Login";
 import Home from "../views/Home";
 
-const PrivateRoute = ({component: Component, ...rest }) => (
-    <Route
-    {...rest}
-    render={props => isAuthenticated() ? (
-        <Component {...props}/>
-    ) : (
-        <Redirect to={{ pathname: "/home", state:{ from:props.location}}}   />
-    )}
-    />
-);
 
 const Routes = () => (
     <BrowserRouter>

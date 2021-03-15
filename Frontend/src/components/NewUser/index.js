@@ -88,7 +88,6 @@ function NewUser({ onClose = () => { }, }) {
                         <S.Input id="peso" type="text" onChange={e => setPeso(e.target.value)} />
                     </S.Text>
                 </S.Data>
-                <S.Address>ENDEREÇO</S.Address>
                 <S.Cancel onClick={onClose}>CANCELAR</S.Cancel>
                 <S.Save onClick={save}>SALVAR</S.Save>
             </S.Content>

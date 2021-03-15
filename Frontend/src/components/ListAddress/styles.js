@@ -20,7 +20,6 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
 `;
-
 export const Content = styled.div`
     background-color: #FFFFFF; 
     color: #000;
@@ -46,8 +45,8 @@ export const Content = styled.div`
 export const Header = styled.div`
     display: block;
     border-bottom: 1px solid #D3D3D3;
-    margin-bottom: 20px;
-
+    height: 15%;
+    margin: 0;
     h2{ 
         width: 200px;
         font-family: Arial, Helvetica, sans-serif;
@@ -58,13 +57,28 @@ export const Header = styled.div`
 `;
 
 export const Data = styled.div`
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #D3D3D3;
+    margin: 0;
+    height: 20%;
+    justify-content: space-between;
+    align-items: center;
+    
+`;
+export const Left = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #D3D3D3;
-    margin-bottom: 20px;
-    
+    width: 90%; 
+    margin-right: 10px; 
+    float: left;
+
+`;
+export const Right = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 80%; 
+    float: right;
 `;
 
 export const Button = styled.button`
@@ -126,22 +140,7 @@ export const Input = styled.input`
     :focus {
     }
 `;
-export const Address = styled.button`
-    width: 100px;
-    height: 40px;
-    float: left;
-    border-radius: 20px;
-    margin-left: 20px;
-    border: none;
-    cursor: pointer;
-    font-family: Arial, sans-serif;
-    background-color: #127786;
-    color: #FFFFFF;
-    outline: none;
-    :hover{
-        border: 1px solid #D3D3D3;
-    }
-`;
+
 export const NewAddress = styled.button`
     width: 150px;
     height: 40px;
@@ -153,8 +152,8 @@ export const NewAddress = styled.button`
     background-color: #127786;
     color: #FFFFFF;
     outline: none;
-    font-size: 1rem;
-    margin-bottom: 12px;
+    font-size: 0.9rem;
+    margin-top: 12px;
     :hover{
         border: 1px solid #D3D3D3;
     }
@@ -182,6 +181,39 @@ export const Cancel = styled.button`
     border: none;
     border-radius: 20px;
     margin-right: 20px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    background-color: #127786;
+    color: #FFFFFF;
+    outline: none;
+    :hover{
+        border: 1px solid #D3D3D3;
+    }
+`;
+export const Edit = styled.button`
+    width: 80px;
+    height: 40px;
+    border: none;
+    float: right;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    background-color: #127786;
+    color: #FFFFFF;
+    outline: none;
+    margin-bottom: 10px;
+    :hover{
+        border: 1px solid #D3D3D3;
+    }
+`;
+export const Delete = styled.button`
+    width: 80px;
+    height: 40px;
+    border: none;
+    font-size: 0.8rem;
+    float: right;
+    border-radius: 20px;
     cursor: pointer;
     font-family: Arial, sans-serif;
     background-color: #127786;

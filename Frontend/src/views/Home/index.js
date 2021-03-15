@@ -4,12 +4,16 @@ import Menu from '../../components/Sidemenu';
 import Header from '../../components/Header';
 import Content from '../Content';
 
-function Home() {
+function Home(props) {
+    const roleId = props.location.state.detail.roleId
+    const id = props.location.state.detail.id
+
+    
     return(
         <S.Container>
-            <Header/>
+            <Header id={id}/>
             <Menu/>
-            <Content/>
+            <Content id={id} roleId={roleId}/>
         </S.Container>
     )
 }

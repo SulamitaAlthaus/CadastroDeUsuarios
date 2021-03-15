@@ -7,7 +7,8 @@ const AddressController = require('../controller/AddressController');
 router.post('/newuser', UserController.create);
 router.put('/user/update/:id', UserController.update);
 router.get('/user/filter/all/', UserController.all);
-router.get('/user/show/:nome', UserController.show);
+router.get('/user/show/:nome', UserController.showName);
+router.get('/user/showid/:id', UserController.showId);
 router.delete('/user/delete/:id', UserController.delete);
 
 

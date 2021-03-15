@@ -35,8 +35,21 @@ class UserController {
       });
   }
 
-  async show(req, res) {
+  async showName(req, res) {
     await UserModel.findOne({ where: { nome: req.params.nome} })
+      .then(response => {
+        if (response)
+          return res.status(200).json(response);
+        else
+          return res.status(404).json({ error: 'Usuário não encontrado' });
+      })
+      .catch(error => {
+        return res.status(500).json(error);
+      })
+  }
+
+  async showId(req, res) {
+    await UserModel.findOne({ where: { id: req.params.id} })
       .then(response => {
         if (response)
           return res.status(200).json(response);

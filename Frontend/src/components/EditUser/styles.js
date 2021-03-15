@@ -125,21 +125,6 @@ export const Input = styled.input`
     :focus {
     }
 `;
-export const Address = styled.button`
-    width: 100px;
-    height: 40px;
-    float: left;
-    border-radius: 20px;
-    margin-left: 20px;
-    border: none;
-    cursor: pointer;
-    font-family: Arial, sans-serif;
-    background-color: #127786;
-    color: #FFFFFF;
-    :hover{
-        border: 1px solid #D3D3D3;
-    }
-`;
 export const Save = styled.button`
     width: 100px;
     height: 40px;

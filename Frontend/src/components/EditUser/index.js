@@ -6,7 +6,7 @@ import Switch from "react-switch";
 function EditUser({ onClose = () => { }, id, nome, email, telefone,
     etnia, idade, peso, roleId }) {
     const [checked, setChecked] = useState(roleId == 1);
-    const [valRole, setValRole] = useState(roleId == 1);
+    const [valRole, setValRole] = useState(roleId);
 
     const handleChange = nextChecked => {
         setChecked(nextChecked);
@@ -24,7 +24,7 @@ function EditUser({ onClose = () => { }, id, nome, email, telefone,
             window.location.reload()
             alert("Usuário atualizado")
         }).catch((err) => {
-            alert("Não foi possível atualizar o usuário" + err +valRole)
+            alert("Não foi possível atualizar o usuário" + err)
         })
     }
 
@@ -69,7 +69,6 @@ function EditUser({ onClose = () => { }, id, nome, email, telefone,
                         <S.Input id="peso" type="text" onChange={e => peso = (e.target.value)} defaultValue={peso} />
                     </S.Text>
                 </S.Data>
-                <S.Address>ENDEREÇO</S.Address>
                 <S.Cancel onClick={onClose}>CANCELAR</S.Cancel>
                 <S.Save onClick={edit}>SALVAR</S.Save>
             </S.Content>

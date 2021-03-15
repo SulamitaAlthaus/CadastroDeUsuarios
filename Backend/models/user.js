@@ -45,7 +45,8 @@ const User = db.define('users', {
         allowNull: false
     },
     password: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        defaultValue: "123456"
     }
 
 });
