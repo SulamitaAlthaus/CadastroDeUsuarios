@@ -113,6 +113,7 @@ export const Text = styled.div`
         height: 25px;
         text-align: right;
         border-radius: 8px;
+        margin-left: 10px;
     }
 `;
 export const Input = styled.input`
