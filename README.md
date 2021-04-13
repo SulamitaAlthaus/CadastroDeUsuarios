@@ -1,4 +1,4 @@
-# creative-code
+# CadastroDeUsuarios
 ### portal para cadastrar e listar usuários, com permissões admin ou user, e endereços.
 
 ### Status do projeto: concluído
@@ -23,7 +23,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 ### Rodando o Back End
 
 ### Clone este repositório
-$ git clone https://github.com/SulamitaAlthaus/creative-code.git
+$ git clone https://github.com/SulamitaAlthaus/CadastroDeUsuarios.git
 
 ### Acesse a pasta do projeto no terminal/cmd
 $ cd backend
