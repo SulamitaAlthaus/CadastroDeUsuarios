@@ -1,5 +1,5 @@
 # creative-code
-## portal para cadastrar e listar usuários, com permissões admin ou user, e endereços.
+### portal para cadastrar e listar usuários, com permissões admin ou user, e endereços.
 
 ### Status do projeto: concluído
 
@@ -10,6 +10,8 @@
     
 ### Demonstração da aplicação 
     https://creativecode-app.herokuapp.com/
+    
+    Usuário para teste: admin@teste.com/ Senha: 123456
 
 ### Pré-requisitos
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
