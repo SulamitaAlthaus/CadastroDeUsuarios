@@ -12,7 +12,8 @@
     https://creativecode-app.herokuapp.com/
     
     - Aguarde alguns minutos para carregar a página, caso ocorra algum erro, atualize e tente novamente
-    - Usuário para teste: admin@teste.com/ Senha: 123456
+    - Usuário para teste Admin: admin@teste.com/ Senha: 123456
+    - Usuário para teste User: user@teste.com/ Senha: 123456
 
 ### Pré-requisitos
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
